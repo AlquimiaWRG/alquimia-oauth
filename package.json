@@ -1,9 +1,9 @@
 {
   "name": "alquimia-oauth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Oauth authentication support for Angular and Wordpress (requires the \"WP OAuth Server\" Wordpress plugin by Justin Greer).",
   "dependencies": {
-    "alquimia-alquimia": "",
+    "alquimia-html5": "",
     "alquimia-wordpress": ""
   },
   "repository" : {
