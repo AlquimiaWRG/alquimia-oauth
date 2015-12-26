@@ -1,6 +1,6 @@
 "use strict";
 
 module.exports = function(done) {
-  alquimia.del('app/src/oauth');
+  alquimia.del(alquimia.getPath('appDir') + '/' + alquimia.getPath('scriptsDir') + '/oauth');
   done();
 };

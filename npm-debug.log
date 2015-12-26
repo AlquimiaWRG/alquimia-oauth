@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/mauroconstantinescu/Documents/alquimia-packages/alquimia-oauth',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/mauroconstantinescu/.npm/alquimia-oauth/0.0.4/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/mauroconstantinescu/.npm/alquimia-oauth/0.0.4/package.tgz',
+9 verbose tar pack   '/Users/mauroconstantinescu/Documents/alquimia-packages/alquimia-oauth' ]
+10 verbose tarball /Users/mauroconstantinescu/.npm/alquimia-oauth/0.0.4/package.tgz
+11 verbose folder /Users/mauroconstantinescu/Documents/alquimia-packages/alquimia-oauth
+12 info prepublish alquimia-oauth@0.0.4
+13 verbose addLocalTarball adding from inside cache /Users/mauroconstantinescu/.npm/alquimia-oauth/0.0.4/package.tgz
+14 silly cache afterAdd alquimia-oauth@0.0.4
+15 verbose afterAdd /Users/mauroconstantinescu/.npm/alquimia-oauth/0.0.4/package/package.json not in flight; writing
+16 verbose afterAdd /Users/mauroconstantinescu/.npm/alquimia-oauth/0.0.4/package/package.json written
+17 silly publish { name: 'alquimia-oauth',
+17 silly publish   version: '0.0.4',
+17 silly publish   description: 'Oauth authentication support for Angular and Wordpress (requires the "WP OAuth Server" Wordpress plugin by Justin Greer).',
+17 silly publish   dependencies: { 'alquimia-html5': '', 'alquimia-wordpress': '' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/AlquimiaWRG/alquimia-oauth.git' },
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   author: { name: 'Mauro Constantinescu' },
+17 silly publish   license: 'ISC',
+17 silly publish   gitHead: 'd6890d69cac19e231d571efa904299beebbad645',
+17 silly publish   bugs: { url: 'https://github.com/AlquimiaWRG/alquimia-oauth/issues' },
+17 silly publish   readme: 'ERROR: No README data found!',
+17 silly publish   homepage: 'https://github.com/AlquimiaWRG/alquimia-oauth#readme',
+17 silly publish   _id: 'alquimia-oauth@0.0.4',
+17 silly publish   _shasum: 'f25a358742be264c9db5609cd2d6e0686283401a',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name alquimia-oauth
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/alquimia-oauth
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/mauroconstantinescu/.npm/alquimia-oauth/0.0.4/package.tgz
+25 verbose request uri https://registry.npmjs.org/alquimia-oauth
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 7:27:21 PM
+28 verbose request using bearer token for auth
+29 verbose request id 4a40381e279dd17e
+30 http request PUT https://registry.npmjs.org/alquimia-oauth
+31 http 403 https://registry.npmjs.org/alquimia-oauth
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Sat, 26 Dec 2015 18:27:23 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-lhr6331-LHR',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1451154442.073552,VS0,VE1076' }
+33 verbose request invalidating /Users/mauroconstantinescu/.npm/registry.npmjs.org/alquimia-oauth on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.0.4." : alquimia-oauth
+35 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+36 verbose statusCode 403
+37 verbose pkgid alquimia-oauth
+38 verbose cwd /Users/mauroconstantinescu/Documents/alquimia-packages/alquimia-oauth
+39 error Darwin 15.0.0
+40 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+41 error node v4.2.2
+42 error npm  v2.14.7
+43 error code E403
+44 error "You cannot publish over the previously published version 0.0.4." : alquimia-oauth
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
